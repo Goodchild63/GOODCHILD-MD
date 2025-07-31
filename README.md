@@ -92,7 +92,13 @@
 ## CONTACT GOODCHILD TECH HERE
   DM FOR SERIOUS BUSINESS
 
-   <a href="https://github.com/Goodchild63/GOODCHILD-INFO"><img title="CONTACT-GOODCHILD" src="https://img.shields.io/badge/CONTACT-GOODCHILD-h?color=black&style=for-the-badge&logo=audi" width="240" height="45.45"/></a></p>
+<a   href="https://wa.me/message/255763755563" target="_blank">
+    <img alt="whatsapp Group" src="https://img.shields.io/badge/leonard tech contact -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+  
+ 
+<a href="https://https://whatsapp.com/channel/0029VbAjawl9MF8vQQa0ZT32" target="_blank">
+    <img alt="whatsapp Group" src="https://img.shields.io/badge/ LEONARD_TECH  CHANNEL -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+
 
