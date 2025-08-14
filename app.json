@@ -1,11 +1,11 @@
 {
   "name":"GOODCHILD-MD",
-  "description":"Best whatsapp bot♻️ developed by GOODCHILD-MD",
+  "description":"Deploy now your bot, GOODCHILD-MD was developed by Leonard tech himself.Make sure you fill all valuables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://files.catbox.moe/8spkl4.jpeg",
-  "repository":"https://github.com/ekitale/maths-project",
+  "repository":"https://github.com/Goodchild63/GOODCHLD-MD",
   "succes_url":"/",
-  "stack":"heroku-24",
+  "stack":"container",
   "env":{
     "PREFIX":
     {
@@ -23,38 +23,8 @@
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
-    },
-    "AUTO_READ":
-    {
-      "description":"Your contact  will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"no",
-      "required":false   
-      },
-  "AUTO_REACT":
-    {
-      "description":"Enter yes for your bot to auto react",
-      "value":"no",
-      "required":false
-         },
-  "CHATBOT":
-    {
-      "description":"Enter yes for your bot to auto reply messages",
-      "value":"no",
-      "required":false
-    },
-	  
-"ANTICALL":
-    {
-      "description":"Enter yes for your bot to auto reject calls",
-      "value":"yes",
-      "required":false
-    },
-"AUTO_REACT_STATUS":
-    {
-      "description":"Enter yes for your bot to auto like status",
-      "value":"yes",
-      "required":true
-    },
+    }
+    ,
      "PM_PERMIT" :
      {
       "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
@@ -65,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"GOODCHILD-MD",
+      "value":" GOODCHILD-MD",
       "required":false
 
     } ,
@@ -83,18 +53,20 @@
       "required":false
     }
 	,
-    "HEROKU_API_KEY": {
-    "description": "insert your heroku api-key (this is optionnal)",
-     "required" :false
+    "HEROKU_APY_KEY": {
+    "description": "insert your heroku api-key ",
+     "value":"HRKU-AAa4OvbTCLDEK8R9CIpjZDInu5zGLmQfqkA0oJNNSu2Q_____wNi617Z3aQe",
+	"required" :true
     },
   "HEROKU_APP_NAME": {
-    "description": "insert your heroku APP NAME (put the name you put on top)",
-     "required" :false
+    "description": "insert your heroku APP NAME (the name you wrote at the beginning)",
+     "value":"",
+	"required" :true
     }  
 	  ,
     "SESSION_ID":
     {
-      "description":"put your session ID , the code you receive after scanning Qr code",   
+      "description":"put your session ID, the code you received after pairing code",   
       "value":"",
       "required":true
       
@@ -104,14 +76,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "GOODCHILD-MD"
+    "value": "Goodchildwilliamz"
   },
     "NUMERO_OWNER":
   {
     
-    "desc": "Your number , dont put '+' and put you area code(exemple of kenya '254')",
-    "required":true,
-    "value": "255763755563"
+    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
+    "required":false,
+    "value": "255784404448"
   },
     "WARN_COUNT":
   {
@@ -126,27 +98,28 @@
     "value": "yes"
   },
   "PRESENCE":{
-    "description":"Mark your presence: 1 online. 2 typing a message. 3 recording . Or leave the field blank to indicate your real state.",
-    "value":"",
+    "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
+    "value":"1",  
     "required": false
   },
   "ANTI_DELETE_MESSAGE" : {
     "description": "if you want to enable anti delete message put yes else put no",
-    "value": "yes",
-        "required": true
+    "value": "no",
+    "required": false
   }
   },
-	
- 
-	  "buildpacks": [
+
+  "formation": {
+		"worker": {
+			"quantity": 1,
+			"size": "basic"
+		}
+	},
+
+  "addons":[
     {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "plan":"heroku-postgresql:essential-0"
     }
   ]
+	
 }
